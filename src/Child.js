@@ -35,7 +35,7 @@ export default function Child() {
     setarr(result)
   }
   const changeColor = (e, index) => {
-    if (ch.current[index].checked && e.target.value == index) {
+    if (ch.current[index].checked && e.target.value === index) {
       changediv.current[index].style.textDecoration = "line-through red"
     }
     else{
@@ -43,7 +43,7 @@ export default function Child() {
     }
   }
   const Edit = (itemid,ind) =>{
-    const todoinfo = arr.find((item)=>item.id==itemid)
+    const todoinfo = arr.find((item)=>item.id===itemid)
     setinputdata(todoinfo.name);
     setdesc(todoinfo.desc);
     setdate(todoinfo.date);
